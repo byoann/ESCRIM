@@ -1,0 +1,6 @@
+DEBUG | 2015/05/07 09:41:57 | ihm.Interface | Interface.java 162 | Debug! 
+ERROR | 2015/05/07 09:41:57 | ihm.Interface | Interface.java 163 | Error! 
+INFO | 2015/05/07 09:41:57 | ihm.Interface | Interface.java 164 | Info! 
+WARN | 2015/05/07 09:41:57 | ihm.Interface | Interface.java 165 | Warn! 
+FATAL | 2015/05/07 09:41:57 | ihm.Interface | Interface.java 166 | Fatality! 
+INFO | 2015/05/07 09:41:58 | ihm.Main | Main.java 45 | Fin Start() 

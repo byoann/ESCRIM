@@ -1,0 +1,29 @@
+INFO | 2015/05/06 14:59:15 | ihm.Main | Main.java 45 | Fin Start() 
+INFO | 2015/05/06 16:10:30 | ihm.Main | Main.java 45 | Fin Start() 
+INFO | 2015/05/06 16:20:00 | ihm.Main | Main.java 45 | Fin Start() 
+INFO | 2015/05/06 16:20:50 | ihm.Main | Main.java 45 | Fin Start() 
+INFO | 2015/05/06 16:27:23 | ihm.Main | Main.java 45 | Fin Start() 
+INFO | 2015/05/06 16:27:54 | ihm.Main | Main.java 45 | Fin Start() 
+INFO | 2015/05/06 16:28:52 | ihm.Main | Main.java 45 | Fin Start() 
+INFO | 2015/05/06 16:30:34 | ihm.Main | Main.java 45 | Fin Start() 
+INFO | 2015/05/06 16:30:56 | ihm.Main | Main.java 45 | Fin Start() 
+FATAL | 2015/05/06 16:32:36 | ihm.Interface | Interface.java 162 | Merde! 
+INFO | 2015/05/06 16:32:36 | ihm.Main | Main.java 45 | Fin Start() 
+DEBUG | 2015/05/06 16:42:19 | ihm.Interface | Interface.java 162 | Debug! 
+ERROR | 2015/05/06 16:42:19 | ihm.Interface | Interface.java 163 | Error! 
+INFO | 2015/05/06 16:42:19 | ihm.Interface | Interface.java 164 | Info! 
+WARN | 2015/05/06 16:42:19 | ihm.Interface | Interface.java 165 | Warn! 
+FATAL | 2015/05/06 16:42:19 | ihm.Interface | Interface.java 166 | Fatality! 
+INFO | 2015/05/06 16:42:19 | ihm.Main | Main.java 45 | Fin Start() 
+DEBUG | 2015/05/06 16:43:22 | ihm.Interface | Interface.java 162 | Debug! 
+ERROR | 2015/05/06 16:43:22 | ihm.Interface | Interface.java 163 | Error! 
+INFO | 2015/05/06 16:43:22 | ihm.Interface | Interface.java 164 | Info! 
+WARN | 2015/05/06 16:43:22 | ihm.Interface | Interface.java 165 | Warn! 
+FATAL | 2015/05/06 16:43:22 | ihm.Interface | Interface.java 166 | Fatality! 
+INFO | 2015/05/06 16:43:23 | ihm.Main | Main.java 45 | Fin Start() 
+DEBUG | 2015/05/06 16:43:31 | ihm.Interface | Interface.java 162 | Debug! 
+ERROR | 2015/05/06 16:43:31 | ihm.Interface | Interface.java 163 | Error! 
+INFO | 2015/05/06 16:43:31 | ihm.Interface | Interface.java 164 | Info! 
+WARN | 2015/05/06 16:43:31 | ihm.Interface | Interface.java 165 | Warn! 
+FATAL | 2015/05/06 16:43:31 | ihm.Interface | Interface.java 166 | Fatality! 
+INFO | 2015/05/06 16:43:31 | ihm.Main | Main.java 45 | Fin Start() 

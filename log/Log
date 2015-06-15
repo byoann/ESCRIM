@@ -1,0 +1,12 @@
+DEBUG | 2015/06/15 10:46:17 | ihm.Interface | Interface.java 217 | Debug! 
+ERROR | 2015/06/15 10:46:17 | ihm.Interface | Interface.java 218 | Error! 
+INFO | 2015/06/15 10:46:17 | ihm.Interface | Interface.java 219 | Info! 
+WARN | 2015/06/15 10:46:17 | ihm.Interface | Interface.java 220 | Warn! 
+FATAL | 2015/06/15 10:46:17 | ihm.Interface | Interface.java 221 | Fatality! 
+INFO | 2015/06/15 10:46:17 | ihm.Main | Main.java 45 | Fin Start() 
+DEBUG | 2015/06/15 10:57:29 | ihm.Interface | Interface.java 217 | Debug! 
+ERROR | 2015/06/15 10:57:29 | ihm.Interface | Interface.java 218 | Error! 
+INFO | 2015/06/15 10:57:29 | ihm.Interface | Interface.java 219 | Info! 
+WARN | 2015/06/15 10:57:29 | ihm.Interface | Interface.java 220 | Warn! 
+FATAL | 2015/06/15 10:57:29 | ihm.Interface | Interface.java 221 | Fatality! 
+INFO | 2015/06/15 10:57:31 | ihm.Main | Main.java 45 | Fin Start() 

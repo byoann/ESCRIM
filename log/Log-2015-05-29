@@ -1,0 +1,36 @@
+DEBUG | 2015/05/29 14:52:48 | ihm.Interface | Interface.java 217 | Debug! 
+ERROR | 2015/05/29 14:52:48 | ihm.Interface | Interface.java 218 | Error! 
+INFO | 2015/05/29 14:52:48 | ihm.Interface | Interface.java 219 | Info! 
+WARN | 2015/05/29 14:52:48 | ihm.Interface | Interface.java 220 | Warn! 
+FATAL | 2015/05/29 14:52:48 | ihm.Interface | Interface.java 221 | Fatality! 
+INFO | 2015/05/29 14:52:48 | ihm.Main | Main.java 45 | Fin Start() 
+DEBUG | 2015/05/29 14:57:33 | ihm.Interface | Interface.java 217 | Debug! 
+ERROR | 2015/05/29 14:57:33 | ihm.Interface | Interface.java 218 | Error! 
+INFO | 2015/05/29 14:57:33 | ihm.Interface | Interface.java 219 | Info! 
+WARN | 2015/05/29 14:57:33 | ihm.Interface | Interface.java 220 | Warn! 
+FATAL | 2015/05/29 14:57:33 | ihm.Interface | Interface.java 221 | Fatality! 
+INFO | 2015/05/29 14:57:34 | ihm.Main | Main.java 45 | Fin Start() 
+DEBUG | 2015/05/29 16:04:10 | ihm.Interface | Interface.java 217 | Debug! 
+ERROR | 2015/05/29 16:04:10 | ihm.Interface | Interface.java 218 | Error! 
+INFO | 2015/05/29 16:04:10 | ihm.Interface | Interface.java 219 | Info! 
+WARN | 2015/05/29 16:04:10 | ihm.Interface | Interface.java 220 | Warn! 
+FATAL | 2015/05/29 16:04:10 | ihm.Interface | Interface.java 221 | Fatality! 
+INFO | 2015/05/29 16:04:10 | ihm.Main | Main.java 45 | Fin Start() 
+DEBUG | 2015/05/29 16:04:53 | ihm.Interface | Interface.java 217 | Debug! 
+ERROR | 2015/05/29 16:04:53 | ihm.Interface | Interface.java 218 | Error! 
+INFO | 2015/05/29 16:04:53 | ihm.Interface | Interface.java 219 | Info! 
+WARN | 2015/05/29 16:04:53 | ihm.Interface | Interface.java 220 | Warn! 
+FATAL | 2015/05/29 16:04:53 | ihm.Interface | Interface.java 221 | Fatality! 
+INFO | 2015/05/29 16:04:54 | ihm.Main | Main.java 45 | Fin Start() 
+DEBUG | 2015/05/29 16:07:23 | ihm.Interface | Interface.java 217 | Debug! 
+ERROR | 2015/05/29 16:07:23 | ihm.Interface | Interface.java 218 | Error! 
+INFO | 2015/05/29 16:07:23 | ihm.Interface | Interface.java 219 | Info! 
+WARN | 2015/05/29 16:07:23 | ihm.Interface | Interface.java 220 | Warn! 
+FATAL | 2015/05/29 16:07:23 | ihm.Interface | Interface.java 221 | Fatality! 
+INFO | 2015/05/29 16:07:23 | ihm.Main | Main.java 45 | Fin Start() 
+DEBUG | 2015/05/29 16:09:56 | ihm.Interface | Interface.java 217 | Debug! 
+ERROR | 2015/05/29 16:09:56 | ihm.Interface | Interface.java 218 | Error! 
+INFO | 2015/05/29 16:09:56 | ihm.Interface | Interface.java 219 | Info! 
+WARN | 2015/05/29 16:09:56 | ihm.Interface | Interface.java 220 | Warn! 
+FATAL | 2015/05/29 16:09:56 | ihm.Interface | Interface.java 221 | Fatality! 
+INFO | 2015/05/29 16:09:56 | ihm.Main | Main.java 45 | Fin Start() 

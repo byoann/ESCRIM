@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ihm.Interface">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <TabPane layoutX="262.0" layoutY="321.0" prefHeight="800.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Page Principale">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField editable="false" layoutX="69.0" layoutY="325.0" prefHeight="36.0" prefWidth="300.0" text="Date de dernière vérification DLU :">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" layoutX="69.0" layoutY="386.0" prefHeight="36.0" prefWidth="300.0" text="Nombre de médicaments à changer :">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" layoutX="69.0" layoutY="269.0" prefHeight="36.0" prefWidth="300.0" text="Dernière mise à jour DBB :">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" layoutX="398.0" layoutY="269.0" prefHeight="36.0" prefWidth="144.0" promptText="JJ / MM / AAAA">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" layoutX="398.0" layoutY="325.0" prefHeight="36.0" prefWidth="144.0" promptText="JJ / MM / AAAA">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" layoutX="398.0" layoutY="386.0" prefHeight="36.0" prefWidth="144.0" promptText="nombre">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="       Colis       ">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </center>
+                     <bottom>
+                        <AnchorPane prefHeight="186.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                           <children>
+                              <SplitPane dividerPositions="0.5" prefHeight="200.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <items>
+                                    <AnchorPane prefHeight="200.0" prefWidth="500.0">
+                                       <children>
+                                          <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: lightgreen;" text="Créer un colis" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button disable="true" layoutX="290.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: lightgreen;" text="Modifier le colis" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button disable="true" layoutX="14.0" layoutY="56.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: lightgreen;" text="Supprimer le/les colis" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="75.0">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button disable="true" layoutX="298.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: lightgreen;" text="Dupliquer le colis" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="75.0">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button layoutX="49.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="400.0" style="-fx-background-color: lightgreen;" text="Afficher tout les colis existant" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="500.0">
+                                       <children>
+                                          <Button disable="true" layoutX="289.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: cyan;" text="Dupliquer la configuration" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="75.0">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button disable="true" layoutX="14.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: cyan;" text="Supprimer la configuration" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="75.0">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button layoutX="25.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: cyan;" text="Créer une configuration" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <Button layoutX="289.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: cyan;" text="Ajouter à la configuration" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </Button>
+                                          <MenuButton alignment="CENTER" layoutX="49.0" layoutY="136.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="400.0" style="-fx-background-color: cyan;" text="Afficher les configurations disponibles" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" text="Action 1" />
+                                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                                            </items>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </MenuButton>
+                                       </children>
+                                    </AnchorPane>
+                                 </items>
+                              </SplitPane>
+                           </children></AnchorPane>
+                     </bottom>
+                  </BorderPane>
+               </content>
+            </Tab>
+            <Tab text="    Materiel    ">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </center>
+                     <bottom>
+                        <AnchorPane prefHeight="186.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button layoutX="42.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: lightgreen;" text="Créer un matériel" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="20.0">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Button>
+                              <Button layoutX="25.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: lightgreen;" text="Supprimer le/les matériels" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="60.0">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Button>
+                              <Button layoutX="42.0" layoutY="93.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: lightgreen;" text="Modifier le matériel" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="100.0">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Button>
+                              <Button layoutX="42.0" layoutY="127.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: lightgreen;" text="Dupliquer le matériel" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="140.0">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Button>
+                              <RadioButton layoutX="292.0" layoutY="24.0" mnemonicParsing="false" text="DLU">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="Matos" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton layoutX="292.0" layoutY="64.0" mnemonicParsing="false" selected="true" text="Tous les matériels" toggleGroup="$Matos" />
+                           </children></AnchorPane>
+                     </bottom>
+                  </BorderPane>
+               </content>
+            </Tab>
+            <Tab text="    Hangar    ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="   Appareils   ">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <left>
+                        <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefWidth="255.0">
+                           <items>
+                              <Accordion prefHeight="773.0" prefWidth="255.0" BorderPane.alignment="CENTER">
+                                <panes>
+                                  <TitledPane animated="false" text="Airbus">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <CheckBox fx:id="A300B4" mnemonicParsing="false" text="A300 B4">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                  <TitledPane animated="false" text="Antonov">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <CheckBox fx:id="An12" mnemonicParsing="false" text="An 12">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="An22" mnemonicParsing="false" text="An 22">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="An124" mnemonicParsing="false" text="An 124">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="An225" mnemonicParsing="false" text="An 225">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane animated="false" text="BAe">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <CheckBox fx:id="BAe146" mnemonicParsing="false" text="146">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane animated="false" text="Boeing">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <CheckBox fx:id="B707" mnemonicParsing="false" text="B707">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="B727200" mnemonicParsing="false" text="B727-200">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="B737200" mnemonicParsing="false" text="B737-200">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="B747100" mnemonicParsing="false" text="B747-100">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="B747200" mnemonicParsing="false" text="B747-200">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="B747400" mnemonicParsing="false" text="B747-400">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="B757F" mnemonicParsing="false" text="B757 F">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="B767300F" mnemonicParsing="false" text="B767-300 F">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="MD11" mnemonicParsing="false" text="MD11">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane animated="false" text="Douglas">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <CheckBox fx:id="DC6" mnemonicParsing="false" text="DC-6">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="DC85455" mnemonicParsing="false" text="DC8 54/55">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="DC862" mnemonicParsing="false" text="DC8 62">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="DC871" mnemonicParsing="false" text="DC8 71">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="DC873" mnemonicParsing="false" text="DC8 73">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="DC1030" mnemonicParsing="false" text="DC10-30">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane animated="false" text="Ilyushin">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <CheckBox fx:id="IL76" mnemonicParsing="false" text="IL76">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane animated="false" text="Lockheed">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <CheckBox fx:id="L10030" mnemonicParsing="false" text="L100-30">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="L188Electra" mnemonicParsing="false" text="L188 Electra">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                                <CheckBox fx:id="L1011Tristar" mnemonicParsing="false" text="L1011 Tristar">
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </CheckBox>
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                    </TitledPane>
+                                </panes>
+                                 <BorderPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </BorderPane.margin>
+                              </Accordion>
+                              <Button defaultButton="true" mnemonicParsing="false" onAction="#ButDeselectAction" prefHeight="25.0" prefWidth="255.0" text="Déselectionner les appareils" />
+                           </items>
+                           <BorderPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </BorderPane.margin>
+                        </SplitPane>
+                     </left>
+                  </BorderPane>
+               </content>
+            </Tab>
+          <Tab onSelectionChanged="#MenuLogsAction" text="     Logs     ">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <TableView fx:id="tableauLog" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </center>
+                     <bottom>
+                        <AnchorPane prefHeight="186.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <RadioButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#RdDEBUGAction" text="Debug" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="14.0">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="PrioLog" />
+                                 </toggleGroup>
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onAction="#RdINFOAction" text="Info" toggleGroup="$PrioLog" AnchorPane.leftAnchor="20.0">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton layoutX="14.0" layoutY="66.0" mnemonicParsing="false" onAction="#RdWARNAction" text="Warn" toggleGroup="$PrioLog" AnchorPane.leftAnchor="20.0">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton layoutX="14.0" layoutY="92.0" mnemonicParsing="false" onAction="#RdERRORAction" text="Error" toggleGroup="$PrioLog" AnchorPane.leftAnchor="20.0">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton layoutX="14.0" layoutY="118.0" mnemonicParsing="false" onAction="#RdFATALAction" text="Fatal" toggleGroup="$PrioLog" AnchorPane.leftAnchor="20.0">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="RdALL" layoutX="14.0" layoutY="144.0" mnemonicParsing="false" onAction="#RdALLAction" selected="true" text="All" toggleGroup="$PrioLog" AnchorPane.leftAnchor="20.0">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <MenuButton layoutX="176.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#MenuFichiersLogsAction" text="Liste des fichiers de Logs">
+                                <items>
+                                  <MenuItem fx:id="Log1" mnemonicParsing="false" onAction="#Log1Action" text="Log1" />
+                                  <MenuItem fx:id="Log2" mnemonicParsing="false" onAction="#Log2Action" text="Log2" />
+                                    <MenuItem fx:id="Log3" mnemonicParsing="false" onAction="#Log3Action" text="Log3" />
+                                    <MenuItem fx:id="Log4" mnemonicParsing="false" onAction="#Log4Action" text="Log4" />
+                                    <MenuItem fx:id="Log5" mnemonicParsing="false" onAction="#Log5Action" text="Log5" />
+                                    <MenuItem fx:id="Log6" mnemonicParsing="false" onAction="#Log6Action" text="Log6" />
+                                    <MenuItem fx:id="Log7" mnemonicParsing="false" onAction="#Log7Action" text="Log7" />
+                                </items>
+                              </MenuButton>
+                           </children></AnchorPane>
+                     </bottom>
+                  </BorderPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
